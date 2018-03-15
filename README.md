@@ -1,2 +1,4 @@
 # ConfigFiles
-Some of my .config files - a backup
+A backup of some of my config files
+
+.vimrc          --> vim is my workhorse! My python ide, note pad ...
