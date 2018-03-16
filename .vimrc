@@ -102,6 +102,10 @@ inoremap jj <Esc>
 inoremap jk <Esc>
 "nnoremap <silent> <Esc> :noh<cr><Esc>
 
+" Create newlines like o and O but stay in normal mode
+nnoremap <silent> zj o<Esc>k
+nnoremap <silent> zk O<Esc>j
+
 "=====================================================
 "" Tabs / Buffers settings
 "=====================================================
