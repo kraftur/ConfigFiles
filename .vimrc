@@ -62,7 +62,7 @@ filetype plugin indent on
 syntax enable                               " syntax highlight
 
 set t_Co=256                                " set 256 colors
-colorscheme gotham256                       " set color scheme was wombat256
+colorscheme molokai                       " set color scheme was wombat256
 
 set number                                  " show line numbers
 set ruler
@@ -88,7 +88,11 @@ set backspace=indent,eol,start              " backspace removes all (indents, EO
 
 set scrolloff=10                            " let 10 lines before/after cursor during scroll
 
-set clipboard=unnamedplus                   " use system clipboard
+if has('unnamedplus')
+    set clipboard=unnamedplus                   " use system clipboard
+else
+    set clipboard+=unnamed
+endif
 
 set exrc                                    " enable usage of additional .vimrc files from working directory
 set secure                                  " prohibit .vimrc files to execute shell, create files, etc...
